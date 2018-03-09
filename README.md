@@ -1,6 +1,8 @@
 ### About
 Forknote is innovative way to create Cryptonote (https://cryptonote.org) based cryptotokens. It gives the users the ability to create cryptotokens just by creating a simple configuration file.
 
+This Forknote Repo is used for the Properteum Coin
+
 ### Dependencies
 * GCC 4.7.3 or later     (http://gcc.gnu.org/)
 * CMake 2.8.6 or later   (http://www.cmake.org/)
