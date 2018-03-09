@@ -163,9 +163,11 @@ void RpcServer::processRequest(const HttpRequest& request, HttpResponse& respons
 bool RpcServer::processJsonRpcRequest(const HttpRequest& request, HttpResponse& response) {
 
   using namespace JsonRpc;
-
+ 
   for (const auto& cors_domain: m_cors_domains) {
     response.addHeader("Access-Control-Allow-Origin", cors_domain);
+	response.addHeader("Access-Control-Allow-Origin", "*");
+	 
   }
   response.addHeader("Content-Type", "application/json");
 
